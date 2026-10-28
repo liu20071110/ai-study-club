@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Study Club：一起學 AI、做小專案、分享每一次進步。">
+  <title>AI Study Club</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="AI Study Club 首頁"><span class="brand-mark" aria-hidden="true">✳</span> AI Study Club</a>
+    <nav aria-label="主要導覽">
+      <a href="#about">關於我們</a>
+      <a href="#projects">小專案</a>
+      <a href="#members">成員</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div>
+        <p class="edition">每一次動手，都是新的進度。</p>
+        <!-- LAB 01：只改下一行 h1 的文字，保留 id 與標籤。 -->
+        <h1 id="hero-title">一起用 AI，<br>把想法做出來。</h1>
+        <!-- LAB 01：只改下一行 p 的文字。 -->
+        <p id="hero-description" class="hero-description">我們是一群好奇的學習者，從小作品開始，一起學習、實作與分享。</p>
+        <a class="button" href="#projects">看看我們的小專案</a>
+      </div>
+      <aside class="club-note" aria-label="本次讀書會">
+        <span class="note-pin" aria-hidden="true"></span>
+        <p>這次，我們一起練習</p>
+        <h2>讓每一次修改<br>都有跡可循。</h2>
+        <p>Git &amp; GitHub Hands-on</p>
+        <ul><li>保存一個版本</li><li>開一條新分支</li><li>合併一份新想法</li></ul>
+        <span class="note-doodle" aria-hidden="true">✦</span>
+      </aside>
+    </section>
+
+    <section id="about" class="about-strip">
+      <div class="wrap about-layout">
+        <h2>不用先成為高手，<br>也能開始。</h2>
+        <p>把 AI 當作一起思考的夥伴，把 Git 當作作品的成長紀錄。今天先做一點，下一次就能再走遠一點。</p>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap section-space" aria-labelledby="projects-title">
+      <div class="section-heading"><h2 id="projects-title">從小作品開始</h2><p>讓抽象的工具，變成看得見的成果。</p></div>
+      <div class="projects-grid">
+        <article class="project"><span class="project-symbol" aria-hidden="true">❋</span><h3>我的第一個網站</h3><p>用 AI 協助建立自己的小天地，再用 Git 記錄每一步。</p><span class="tag">網站練習</span></article>
+        <article class="project"><span class="project-symbol" aria-hidden="true">⌘</span><h3>讀書筆記整理</h3><p>把零散想法整理成好讀的摘要，留下自己的理解。</p><span class="tag">學習工具</span></article>
+        <article class="project" id="team-project"><span class="project-symbol" aria-hidden="true">✧</span>
+          <!-- LAB 03 A：只改這張卡片的 h3 與 p，不改其他區域。 -->
+          <h3>下一個點子</h3><p>這裡留給我們下一個想一起完成的小作品。</p><span class="tag">合作提案</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="members" class="wrap section-space" aria-labelledby="members-title">
+      <div class="section-heading"><h2 id="members-title">認識一起學習的人</h2><p>每個人都能帶來一點不同。</p></div>
+      <div class="members-grid">
+        <article class="member" id="about-me">
+          <div class="avatar" aria-hidden="true">☺</div>
+          <div>
+            <!-- LAB 02：在 feature/about-me 分支修改這三行文字。 -->
+            <h3 id="member-name">你的暱稱</h3>
+            <p id="member-bio">我正在學習用 AI 把想法變成作品。</p>
+            <p id="member-goal" class="member-goal">這學期想完成：我的第一個小專案。</p>
+          </div>
+        </article>
+        <article class="member" id="partner">
+          <div class="avatar partner-avatar" aria-hidden="true">✿</div>
+          <div>
+            <!-- LAB 03 B：只改這兩行，不改上面的自介。 -->
+            <h3 id="partner-name">下一位夥伴</h3>
+            <p id="partner-bio">把你想分享的一件事，留在這裡。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="prompt-section wrap" aria-labelledby="prompt-title">
+      <div><h2 id="prompt-title">不知道從哪裡開始？</h2><p>抽一個小挑戰，下次讀書會帶來分享。</p></div>
+      <div class="prompt-action"><button class="button" id="challenge-button" type="button">抽一個小挑戰</button><p id="challenge-output" role="status" aria-live="polite">你的下一個作品，也許就從這裡開始。</p></div>
+      <noscript><p>小挑戰：做一張介紹自己喜歡的書的網頁。</p></noscript>
+    </section>
+  </main>
+  <footer class="wrap site-footer"><span>AI Study Club</span><p>一起學習，留下每一步。</p><a href="#main">回到頂端</a></footer>
+</body>
+</html>
